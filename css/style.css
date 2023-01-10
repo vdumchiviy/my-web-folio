@@ -91,8 +91,10 @@ p {
 =================*/
 
 .header {
-    background: #2d7ded;
-    padding: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 110px;
+
+    background: #2b7ded;
 }
 
 .header-flex {
@@ -142,7 +144,7 @@ p {
 }
 
 .header-nav-menu {
-    margin: 0.8rem;
+    margin-left: 1.5rem;
 
     font-size: 1rem;
     color: white;
@@ -170,4 +172,62 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+
+/* Content
+============= */
+
+.content {
+    width: 550px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: white;
+    opacity: 60%;
+    font-weight: 300;
+
+}
+
+.title {
+    margin-bottom: 35px;
+    color: white;
+    font-weight: normal;
+
+    line-height: 1.2;
+}
+
+.title span {
+    color: #2d7ded;
+}
+
+.text {
+    margin-bottom: 50px;
+
+    color: white;
+    font-size: 1rem;
+}
+
+/* Buttons
+=============== */
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    line-height: 1.1;
+
+    font-weight: medium;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+    background-color: #2d7ded;
+    border-radius: 5px;
+
+    transition: background-color 0.2s linear;
+
+}
+
+.btn:hover {
+    background-color: #1564d2
 }
