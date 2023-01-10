@@ -241,3 +241,65 @@ p {
     right: 20px;
     bottom: 0;
 }
+
+/* Contacts 
+============= */
+.contacts {
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+}
+
+.contacts-flex {
+    display: flex;
+    align-items: center;
+}
+
+.contact-logo {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.contact-link {
+    margin-right: 20px;
+
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: text-decoration 0.2s linear;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+
+}
+
+/* .contacts-finish-line {
+    width: 80px;
+    height: 2px;
+    background-color: white;
+} */
+.contact-link:last-child {
+    position: relative;
+    align-items: center;
+}
+
+.contact-link:last-child::after {
+    width: 80px;
+    height: 2px;
+    margin-left: 2rem;
+    content: "";
+    display: block;
+
+    background-color: white;
+    pointer-events: none;
+
+    position: absolute;
+    left: 100%;
+    top: 11px;
+
+}
