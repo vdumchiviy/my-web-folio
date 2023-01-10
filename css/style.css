@@ -82,6 +82,7 @@ p {
 .page {
     width: 100%;
     height: 100vh;
+    position: relative;
 
     background: black url("../img/bg.jpg") center no-repeat;
     background-size: cover;
@@ -91,8 +92,10 @@ p {
 =================*/
 
 .header {
-    background: #2d7ded;
-    padding: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 110px;
+
+    background: #2b7ded;
 }
 
 .header-flex {
@@ -142,7 +145,7 @@ p {
 }
 
 .header-nav-menu {
-    margin: 0.8rem;
+    margin-left: 1.5rem;
 
     font-size: 1rem;
     color: white;
@@ -170,4 +173,133 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+
+/* Content
+============= */
+
+.content {
+    width: 550px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: white;
+    opacity: 60%;
+    font-weight: 300;
+
+}
+
+.title {
+    margin-bottom: 35px;
+    color: white;
+    font-weight: normal;
+
+    line-height: 1.2;
+}
+
+.title span {
+    color: #2d7ded;
+}
+
+.text {
+    margin-bottom: 50px;
+
+    color: white;
+    font-size: 1rem;
+}
+
+/* Buttons
+=============== */
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    line-height: 1.1;
+
+    font-weight: medium;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+    background-color: #2d7ded;
+    border-radius: 5px;
+
+    transition: background-color 0.2s linear;
+
+}
+
+.btn:hover {
+    background-color: #1564d2
+}
+
+/* My photo 
+============== */
+
+.my-photo {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+/* Contacts 
+============= */
+.contacts {
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+}
+
+.contacts-flex {
+    display: flex;
+    align-items: center;
+}
+
+.contact-logo {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.contact-link {
+    margin-right: 20px;
+
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: text-decoration 0.2s linear;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+
+}
+
+/* .contacts-finish-line {
+    width: 80px;
+    height: 2px;
+    background-color: white;
+} */
+.contact-link:last-child {
+    position: relative;
+    align-items: center;
+}
+
+.contact-link:last-child::after {
+    width: 80px;
+    height: 2px;
+    margin-left: 2rem;
+    content: "";
+    display: block;
+
+    background-color: white;
+    pointer-events: none;
+
+    position: absolute;
+    left: 100%;
+    top: 11px;
+
 }
