@@ -183,6 +183,10 @@ p {
     width: 550px;
 }
 
+.content-title {
+    margin-bottom: 35px;
+}
+
 .subtitle {
     font-size: 1.4rem;
     color: white;
@@ -192,7 +196,8 @@ p {
 }
 
 .title {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
+
     color: white;
     font-weight: normal;
 
@@ -217,11 +222,14 @@ p {
     padding: 12px 35px;
     line-height: 1.1;
 
+    font-family: inherit;
     font-weight: medium;
     color: white;
     font-size: 1rem;
     text-decoration: none;
 
+    cursor: pointer;
+    border: 0;
     background-color: #2d7ded;
     border-radius: 5px;
 
@@ -302,4 +310,44 @@ p {
     left: 100%;
     top: 11px;
 
+}
+
+/* Contact me form
+=================== */
+
+.contactme-form {
+    width: 100%;
+    max-width: 300px;
+}
+
+.contactme-form-field,
+.contactme-form-textarea {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 12px 18px;
+    width: 100%;
+    height: 2rem;
+
+    font-size: 1rem;
+    color: white;
+    font-family: inherit;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+}
+
+.contactme-form-textarea {
+    height: 6rem;
+    resize: none;
+}
+
+.contactme-form-field::placeholder,
+.contactme-form-textarea::placeholder {
+    color: white;
+    opacity: 75%;
+}
+
+.contactme-form-button {
+    width: 100%;
 }

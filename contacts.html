@@ -36,9 +36,9 @@
                         </div>
                         <nav class="header-nav">
                             <a class="header-nav-menu" href="index.html">Home</a>
-                            <a class="header-nav-menu active" href="about.html">About</a>
+                            <a class="header-nav-menu" href="about.html">About</a>
                             <a class="header-nav-menu" href="#">Portfolio</a>
-                            <a class="header-nav-menu" href="contacts.html">Contact</a>
+                            <a class="header-nav-menu active" href="contacts.html">Contact</a>
                         </nav>
 
                     </div> <!-- /.header-flex-->
@@ -49,18 +49,21 @@
             <div class="container">
                 <main class="content">
                     <div class="content-title">
-                        <h1 class="title">Maksim Kovtun</h1>
+                        <h1 class="title">Write me a <span>message</span></h1>
+                        <div class="text">
+                            <p>I am a software developer in the IT sphere because that is what I really like and want to do.</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p>I am a software developer in the IT sphere because that is what I really like and want to do.</p>
-                        <p>
-                            I worked as an Oracle developer in the banking industry which period I got acquainted with Python and then changed to a Python developer for the last 2 years I have accumulated a great experience in this sphere, not only in the banking industry but also in some projects of my own, such as
-                            chat-bot for finding people on social network, application for downloading photos from social network and uploading them to the cloud drive, online shop (www.nemerch.tk). I work in a backend team, my role is to create models and provide APIs to the frontend development team.</p>
-                        <p>In a nutshell - I want to create useful applications and love to do it.
-                        </p>
-                    </div>
+                    <form class="contactme-form" method="post" action="#">
+                        <input class="contactme-form-field" type="text" placeholder="Name" name="name">
+                        <input class="contactme-form-field" type="email" placeholder="E-mail" name="email">
+                        <input class="contactme-form-field" type="tel" placeholder="Phone" name="phone">
+                        <textarea class="contactme-form-textarea" placeholder="Message" name="message"></textarea>
+                        <button class="btn contactme-form-button" type="submit" name="action_button">Send message</button>
+                    </form>
                 </main>
             </div> <!-- ./container-->
+
 
             <img class="my-photo" src="img/maksimkovtun.png" alt="Maksim Kovtun">
 
