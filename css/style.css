@@ -83,10 +83,13 @@ p {
 .page {
     width: 100%;
     height: 100vh;
+    min-height: 770px;
     position: relative;
+    overflow: hidden;
 
     background: black url("../img/bg.jpg") center no-repeat;
     background-size: cover;
+
 }
 
 /*  Header
@@ -206,6 +209,7 @@ p {
     font-weight: normal;
 
     line-height: 1.2;
+    font-size: 2rem;
 }
 
 .title span {
@@ -258,6 +262,7 @@ p {
 ============= */
 .contacts {
     width: 100%;
+    margin-top: 1rem;
 
     position: absolute;
     left: 0;
@@ -361,14 +366,51 @@ p {
 
 /*  Media
 ============= */
-
-@media (max-width: 1000px) {
-    .my-photo {
-        display: none;
+@media (orientation: landscape) {
+    .contacts {
+        position: static;
     }
 }
 
+@media (max-width: 1000px) {}
+
+.my-photo {
+    right: -200px;
+}
+
 @media (max-width: 767px) {
+    .page {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .my-photo {
+        display: none;
+    }
+
+    /* Content 767 */
+
+    .content {
+        margin-bottom: 1rem;
+        max-width: none;
+
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.6rem;
+    }
+
+    /* Header 767 */
+
+    .header {
+        margin-bottom: 2rem;
+    }
+
     .header-logo {
         display: none;
     }
@@ -376,27 +418,16 @@ p {
     .header-brandname {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 550px) {
-
-    .content {
-        text-align: center;
+    /* Form contactme 767*/
+    .contactme-form {
+        margin: 0 auto;
     }
 
-    .header-flex {
-        flex-direction: column;
-    }
-
-    .header-brandname {
-        margin-bottom: 1rem;
-    }
+    /* Contacts 767*/
 
     .contacts {
-        width: 100%;
-        margin-top: 1rem;
-
-        position: unset;
+        position: static;
     }
 
     .contacts-flex {
@@ -415,4 +446,39 @@ p {
     .contact-link:last-child::after {
         display: none;
     }
+
+}
+
+@media (max-width: 550px) {
+    .page {
+        min-height: 100vh;
+        height: auto;
+    }
+
+
+    /* Header */
+
+
+    .header-flex {
+        flex-direction: column;
+    }
+
+    .header-brandname {
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    /* Content 320 */
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
 }
